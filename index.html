@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勇者 hoshizora の冒険</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-screen">
+            <div id="text-window">
+                <p id="game-message">伝説の勇者よ、旅立ちの時が来た！</p>
+            </div>
+            <div id="player-status">
+                <p>勇者 hoshizora</p>
+                <p>HP: <span id="player-hp">100</span></p>
+            </div>
+            <div id="enemy-status" class="hidden">
+                <p id="enemy-name"></p>
+                <p>HP: <span id="enemy-hp"></span></p>
+            </div>
+            <img id="enemy-image" src="" class="hidden" alt="敵">
+        </div>
+
+        <div id="command-window">
+            <button id="start-btn" class="command-btn">冒険を始める</button>
+            <div id="battle-commands" class="hidden">
+                <button id="attack-btn" class="command-btn">攻撃</button>
+                <button id="heal-btn" class="command-btn">回復</button>
+                <button id="run-btn" class="command-btn">逃げる</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
